@@ -37,3 +37,56 @@
 # Print a single summary line using an f-string that combines all four
 # values, e.g.:
 # "Swaraj executed 10 test cases with 85.5% pass rate. Automation ready: yes"
+
+
+Code: 
+tester_name = input("Enter your name: ")
+print("Hello, " + tester_name + "!")
+
+test_cases_executed = int(input("Enter the number of test cases executed: "))
+print("Test cases executed:", test_cases_executed)
+
+pass_percentage = float(input("Enter the pass percentage: "))
+print("Pass percentage:", pass_percentage)
+
+automation_ready_input = input("Is automation ready? (yes/no): ")
+print("Automation ready:", automation_ready_input)
+
+print(f"{tester_name} executed {test_cases_executed} test cases with {pass_percentage}% pass rate. Automation ready: {automation_ready_input}")
+
+Terminal result
+miko@miko-Lenovo-V130-14IKB:~$ /usr/local/bin/python3.14 /home/miko/Downloads/Python_project4.py
+miko@miko-Lenovo-V130-14IKB:~$ /usr/local/bin/python3.14 /home/miko/Downloads/Python_project4.py
+miko@miko-Lenovo-V130-14IKB:~$ /usr/local/bin/python3.14 /home/miko/Downloads/Python_project4.py
+Enter your name: ^CTraceback (most recent call last):
+  File "/home/miko/Downloads/Python_project4.py", line 4, in <module>
+    test_cases_executed = int(input("Enter the number of test cases executed: "))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+miko@miko-Lenovo-V130-14IKB:~$ /usr/local/bin/python3.14 /home/miko/Downloads/Python_project4.py
+Enter your name: Swaraj
+Hello, Swaraj!
+Enter the number of test cases executed: 100
+Test cases executed: 100
+Enter the pass percentage: 85 %
+Traceback (most recent call last):
+  File "/home/miko/Downloads/Python_project4.py", line 7, in <module>
+    pass_percentage = float(input("Enter the pass percentage: "))
+ValueError: could not convert string to float: '85 %'
+miko@miko-Lenovo-V130-14IKB:~$ 85
+85: command not found
+miko@miko-Lenovo-V130-14IKB:~$ 85
+85: command not found
+miko@miko-Lenovo-V130-14IKB:~$ /usr/local/bin/python3.14 /home/miko/Downloads/Python_project4.py
+Enter your name: Swaraj
+Hello, Swaraj!
+Enter the number of test cases executed: 100
+Test cases executed: 100
+Enter the pass percentage: 85
+Pass percentage: 85.0
+Is automation ready? (yes/no): Yes
+Automation ready: Yes
+Swaraj executed 100 test cases with 85.0% pass rate. Automation ready: Yes
+miko@miko-Lenovo-V130-14IKB:~$ ^C
+miko@miko-Lenovo-V130-14IKB:~$ 

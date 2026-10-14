@@ -1,3 +1,7 @@
+# Review (Swati): Not submitted yet - this file still has only the TODO
+# scaffolding, no solution filled in. Nothing to review here until the
+# TODOs below are completed.
+
 # Assignment 4: input() and user interaction
 #
 # So far we've hardcoded values like tester_name and test_cases_executed.

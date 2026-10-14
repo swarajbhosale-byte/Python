@@ -1,7 +1,3 @@
-# Review (Swati): Not submitted yet - this file still has only the TODO
-# scaffolding, no solution filled in. Nothing to review here until the
-# TODOs below are completed.
-
 # Assignment 4: input() and user interaction
 #
 # So far we've hardcoded values like tester_name and test_cases_executed.
@@ -43,7 +39,22 @@
 # "Swaraj executed 10 test cases with 85.5% pass rate. Automation ready: yes"
 
 
-Code: 
+# Review (Swati): TODOs 1-5 are all correctly implemented below - input()
+# + the right cast (int()/float()) for each value, and the f-string
+# summary line all work exactly as asked. Nice job.
+#
+# One thing to fix: this file currently does NOT run. The bare "Code:"
+# label above the solution and the pasted terminal transcript below it
+# ("Terminal result" + the shell session) aren't valid Python - I get:
+#   SyntaxError: invalid decimal literal
+#     (at the "miko@miko-Lenovo-..." line)
+# Since they're not commented out (no leading #), Python tries to execute
+# them as code. Please remove the "Code:"/"Terminal result" labels and the
+# raw transcript from the .py file itself (or turn them into comments with
+# #) - keep this file to just the runnable solution. Pasting your test run
+# output is good practice, but it belongs in a comment, a commit message,
+# or a separate notes file, not as bare text in the script.
+
 tester_name = input("Enter your name: ")
 print("Hello, " + tester_name + "!")
 

@@ -47,3 +47,26 @@
 # Convert it to an int, then use if/elif/else to print the matching label
 # ("High priority", "Medium priority", "Low priority").
 # If the number isn't 1, 2, or 3, print "Invalid priority entered."
+
+
+# Review (Swati): This assignment hasn't been attempted yet - there's no
+# code under any of the TODOs, only the instructions. Please add your
+# solution below each TODO (or all together at the bottom, like you did in
+# assignment 4). A few pointers before you start:
+#
+# - TODO 1: order matters in if/elif/else. Check the highest range first
+#   (>= 90), then >= 70, then else - Python stops at the first match, so
+#   you don't need "and < 90" on the second condition.
+# - TODO 2: to make "yes", "Yes" and "YES" all count, compare a lowercased
+#   copy: automation_ready_input.lower() == "yes". That comparison already
+#   gives you a real True/False - no if/else needed to build the bool.
+# - TODO 3: use == for the 0 check (a single = is assignment and will give
+#   a SyntaxError inside an if).
+# - TODO 4: automation_ready is already a bool, so "and automation_ready"
+#   is enough - no need for "== True".
+# - TODO 5: remember to cast with int() first; "1" (string) is not equal
+#   to 1 (int), so comparing the raw input() result would never match.
+#
+# Same reminder as assignment 4: keep this file to runnable Python only.
+# If you want to include your test-run output, put it in comments (# ...),
+# not as bare text, so the file still runs.
